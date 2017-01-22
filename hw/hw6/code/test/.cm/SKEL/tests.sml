@@ -1,0 +1,2 @@
+Skeleton 5
+d2f9d"Int"d"Osm"d"Char"d"List"Cd"String"d"Vector"d"ListMergeSort"d"ListFormat"d"IntInf"Nad"Tests"h5Ca‰¢T"gp1d"TextIO"ad"S"gp2ˇÅ%d"StreamIO"ad"U"gp1d"UnitTest"ad"TR"gp1d"TestRunner"ad"G"gp1d"Hw6Graph"N

@@ -1,0 +1,16 @@
+Library
+  structure Osm
+  (*
+  structure OsmDriver
+  *)
+  structure Hw6Graph
+is
+
+  hw6_osm.sml
+  hw6_graph.sml
+
+  $/basis.cm
+  $/smlnj-lib.cm
+  $smlnj/compiler/compiler.cm
+  $smlnj-tdp/plugins.cm
+

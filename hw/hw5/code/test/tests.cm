@@ -1,0 +1,12 @@
+Group
+    structure Tests
+is
+    tests.sml
+	unit_test.sml
+
+	../src/hw5.cm
+
+    $/basis.cm
+	$/smlnj-lib.cm
+	$smlnj/compiler/compiler.cm
+	$smlnj-tdp/plugins.cm

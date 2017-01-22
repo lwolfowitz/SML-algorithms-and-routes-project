@@ -1,0 +1,54 @@
+(*  COMP 212 Homework 1:  ML Basics.
+*   N. Danner
+*)
+
+
+(*  **********
+*   PROBLEM 1
+*
+*a)int, "7" is an int, and so the operation x*7 can only return an int.
+*b)real, "7.0" is a real, and so the operation x*7.0 can only return a real.
+*c)int or real, ~ and * work for both.
+*d)real, .sin() and / are both for reals
+*e)cannot be assigned, .sin() is for reals and div is for ints
+*)
+
+structure Hw1 =
+struct
+
+  (*  **********
+  *   PROBLEM 2 
+  *)
+
+  (*  round10(x) = y, where y is the result of rounding x to the nearest 10-th.
+  *
+  *   Real.round(0.5) = 0?  Yes; see API docs.
+  *)
+  fun round10 (x : real) : real =
+    0.0
+
+  (*  **********
+  *   PROBLEM 3.
+  *)
+
+  (*  rotate1 [x_0,...,x_{n-1}] = [x_1,...,x_{n-1},x_0].
+  *)
+  fun rotate1 (xs : int list) : int list =
+    []
+
+  (*  rotate ([x_0,...,x_{m-1}], n) = [x_n,...,x_{m-1},x_0,...,x_{n-1}].
+  *)
+  fun rotate (xs : int list, n : int) : int list =
+    []
+
+  (*  **********
+  *   PROBLEM 4.
+  *)
+
+  (*  editDist (u, v) = the edit distance from u to v, as defined in
+  *   the assignment.
+  *)
+  fun editDist(u : string, v : string) : int =
+    0
+
+end

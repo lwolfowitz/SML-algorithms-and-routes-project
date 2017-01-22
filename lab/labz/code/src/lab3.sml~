@@ -1,0 +1,51 @@
+(*  COMP 212 Lab 3:  case expressions and let expressions.
+*   N. Danner
+*)
+
+structure Lab3 =
+struct
+
+  (*  length [x_0,...,x_{n-1}] = n.
+  *)
+  fun length (xs : int list) : int =
+    0
+
+  (*  sum [x_0,...,x_{n-1}] = x_0 + x_1 + ... + x_{n-1}.
+  *)
+  fun sum (xs : int list) : int =
+    0
+
+  (*  dup [x_0,...,x_{n-1}] = [x_0, x_0, x_1, x_1,...,x_{n-1}, x_{n-1}].
+  *)
+  fun dup (xs : int list) : int list =
+    []
+
+  (*  altPairs [x_0,,...,x_{n-1}] 
+  *   = [x_1, x_0, x_3, x_2,..., x_{n-1}, x_{n-2}], n even
+  *   = [x_1, x_0, x_3, x_2,..., x_{n-2}, x_{n-3}, x_{n-1}], n odd.
+  *   In other words, altPairs(xs) is the list obtained by flipping
+  *   consecutive pairs of values in xs.  If length(xs) is odd, then
+  *   the last element of xs is left in place.
+  *)
+  fun altPairs (xs : int list) : int list =
+    []
+
+  (*  thouPow(x) = x^{1000}.  Write this function non-recursively
+  *   using a few let-bindings.
+  *)
+  fun thouPow(x : real) : real =
+    0.0
+
+  (*  dblExp(x, i) = x^{2^i}.
+  *)
+  fun dblExp(x : real, i : int) : real =
+    0.0
+
+  (*  index([x_0,...,x_{n-1}], x)
+  *   = k, if x_k = x and x_i <> x for all i < k.
+  *   = ~1, if there is no k such that x_k = x.
+  *)
+  fun index(xs : int list, x : int) : int =
+    0
+
+end

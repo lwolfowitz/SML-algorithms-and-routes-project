@@ -1,0 +1,44 @@
+structure Hw3 =
+struct
+
+  structure S = TextIO.StreamIO
+
+  (*  fmt(<c_0,c_1,...>, outs, len) writes the characters c_0,c_1,... to
+  *   outs with #"\n" inserted so that 
+  *   - #"\n" is inserted at the beginning of a contiguous sequence of
+  *     whitespace characters;
+  *   - If #"\n" is inserted before writing c_n,c_{n+1},..., then
+  *     the next character written is c_{n'}, where c_n,...,c_{n'-1}
+  *     are all whitespace characters;
+  *   - #"\n" is inserted at most every len characters.
+  *
+  *   In other words, fmt "formats" the input by inserting #"\n" to 
+  *   create lines of length at most len.  #"\n" is only inserted at
+  *   "word breaks," and if #"\n" is inserted at the beginning of 
+  *   a word break, then all the space until the first character of
+  *   the next word is removed (so the next line always starts with
+  *   a non-whitespace character).
+  *
+  *   As you may notice, it is very difficult to give a formal specification
+  *   for this function.  That is typical with output functions.  Most
+  *   of the auxilliary functions that I use in my solution do not perform
+  *   output, and hence of much more precise and formal specifications.
+  *)
+  fun fmt(ins : S.instream, outs : S.outstream, len : int) : unit =
+    let
+      wordBuilder (ins : S.instream) =
+        case S.input1(ins) of 
+            NONE => []
+          | SOME(#" ",ins') => []
+          | SOME(#"\n",ins') => []
+          | SOME(#"\t",ins') => []
+          | SOME(c,ins') => c @ wordBuilder(ins')
+      runningCount (length : int, current : string, newWord) =
+        if ((string.length(current) + string.length(newWord) + 1) > length)
+        then current
+      else runningCount(length, (current ^ " " ^ newWord), wordBuilder(ins'))
+
+    in
+      (S.output(outs, runningCount(len, "", wordBuilder(ins))))
+    end
+end 

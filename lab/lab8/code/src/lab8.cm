@@ -1,0 +1,11 @@
+Library
+  structure Lab8
+is
+
+  lab8.sml
+
+  $/basis.cm
+  $/smlnj-lib.cm
+  $smlnj/compiler/compiler.cm
+  $smlnj-tdp/plugins.cm
+

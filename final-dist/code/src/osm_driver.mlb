@@ -1,0 +1,13 @@
+$(SML_LIB)/basis/basis.mlb
+$(SML_LIB)/smlnj-lib/RegExp/regexp-lib.mlb
+$(SML_LIB)/smlnj-lib/Util/smlnj-lib.mlb
+
+comp212vector.sig
+braunvec.sml
+priqueue.sig
+listpq.sml
+wgraph.sig
+wgraph_adj.sml
+xml.sml
+osm.sml
+osm_driver.sml
